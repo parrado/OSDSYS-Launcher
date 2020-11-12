@@ -14,7 +14,7 @@ $(EE_BIN_STRIPPED): $(EE_BIN)
 	$(EE_STRIP) -o $@ $<
 	
 $(EE_BIN_PACKED): $(EE_BIN_STRIPPED)
-	ps2-packer/ps2-packer -v $< $@
+	ps2-packer -v $< $@
 	
 include $(PS2SDK)/samples/Makefile.pref
 include $(PS2SDK)/samples/Makefile.eeglobal
